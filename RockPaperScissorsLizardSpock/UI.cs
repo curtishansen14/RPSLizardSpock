@@ -40,6 +40,15 @@ namespace RockPaperScissorsLizardSpock
             Console.WriteLine("Lizard beats Paper & Spock ");
         }
 
+        public static void reminder()
+        {
+            Console.WriteLine("Scissors beats Paper & Lizard");
+            Console.WriteLine("Paper beats Spock & Paper");
+            Console.WriteLine("Rock beats Lizard & Scissors");
+            Console.WriteLine("Spock beats Scissors & Rock");
+            Console.WriteLine("Lizard beats Paper & Spock ");
+        }
+
         public static void askNumberofHumans()
         {
             Console.WriteLine("How many humans are playing 1 or 2?");
@@ -53,11 +62,11 @@ namespace RockPaperScissorsLizardSpock
         public static void askForChampionName()
         {
             Console.WriteLine("Select Champion");
-            Console.WriteLine("0 for Rock");
-            Console.WriteLine("1 for Paper");
-            Console.WriteLine("2 for Scissors");
-            Console.WriteLine("3 for Lizard");
-            Console.WriteLine("4 for Spock");
+            Console.WriteLine("1 for Rock");
+            Console.WriteLine("2 for Paper");
+            Console.WriteLine("3 for Scissors");
+            Console.WriteLine("4 for Lizard");
+            Console.WriteLine("5 for Spock");
         }
 
         public static void playerVsPlayerIntro()
@@ -69,7 +78,23 @@ namespace RockPaperScissorsLizardSpock
         {
             Console.WriteLine("You have choosen Human vs computer");
         }
+
+        public static void DisplayScore(string P1name, int P1score, string P2Name, int P2Score)
+        {
+            Console.WriteLine("{0}: {1} {2}: {3}", P1name, P1score, P2Name, P2Score);
+        }
+
+        public static void Scores(string name)
+        {
+            Console.WriteLine("{0} scores.", name);
+        }
+
+        public static void DeclareWinner(string name, int score, int Score)
+        {
+            Console.WriteLine("{0} Wins! {1} to {2} ", name, score, Score);
+        }
         //Error Messages 
+
 
         public static void PleaseTryAgain()
         {
@@ -133,5 +158,4 @@ namespace RockPaperScissorsLizardSpock
 
     }
 }
-    }
-}
+
